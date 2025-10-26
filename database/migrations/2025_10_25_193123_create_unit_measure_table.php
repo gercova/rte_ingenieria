@@ -11,9 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('product_type', function (Blueprint $table) {
+        Schema::create('unit_measure', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('description', 50)->unique();
+            $table->string('description', 100)->unique();
+            $table->string('aka', 10)->unique();
             $table->timestamps();
             $table->softDeletes();
         });
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('product_type');
+        Schema::dropIfExists('unit_measure');
     }
 };
