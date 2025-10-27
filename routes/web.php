@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pw/index');
+    return view('livewire.pw.index');
 });
 
 Route::get('/product', function () {
-    return view('pw/product');
+    return view('livewire.pw.product');
 });
