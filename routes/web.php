@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\Home\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,5 @@ Route::get('/', function () {
 Route::get('/product', function () {
     return view('livewire.pw.product');
 });
+
+Route::get('/sys/home', [HomeController::class, 'index']);
