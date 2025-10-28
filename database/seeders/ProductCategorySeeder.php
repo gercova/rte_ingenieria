@@ -13,9 +13,9 @@ class ProductCategorySeeder extends Seeder
      */
     public function run(): void
     {
-        ProductCategory::create(['description' => 'Accesorio']);
-        ProductCategory::create(['description' => 'Equipo']);
-        ProductCategory::create(['description' => 'Herramienta']);
-        ProductCategory::create(['description' => 'Telecomunicación']);
+        ProductCategory::create(['name' => 'Accesorio', 'description' => '--']);
+        ProductCategory::create(['name' => 'Equipo', 'description' => '--']);
+        ProductCategory::create(['name' => 'Herramienta', 'description' => '--']);
+        ProductCategory::create(['name' => 'Telecomunicación', 'description' => '--']);
     }
 }

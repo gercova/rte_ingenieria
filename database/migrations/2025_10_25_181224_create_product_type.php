@@ -14,8 +14,6 @@ return new class extends Migration
         Schema::create('product_type', function (Blueprint $table) {
             $table->increments('id');
             $table->string('description', 50)->unique();
-            $table->timestamps();
-            $table->softDeletes();
         });
     }
 

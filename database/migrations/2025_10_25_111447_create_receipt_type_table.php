@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('receipt_type', function (Blueprint $table) {
+        Schema::create('receipt_type', function (Blueprint $table) { // tipo recibo
             $table->increments('id');
-            $table->string('description', 50);
+            $table->string('name', 50);
             $table->string('code', 4);
         });
     }

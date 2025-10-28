@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('unit_measure', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('description', 100)->unique();
+            $table->string('name', 50)->unique();
+            $table->string('description');
             $table->string('aka', 10)->unique();
             $table->timestamps();
             $table->softDeletes();

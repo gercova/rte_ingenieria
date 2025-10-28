@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('product_model', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('description', 50);
+            $table->string('name', 50)->unique();
+            $table->string('description');
             $table->timestamps();
             $table->softDeletes();
         });

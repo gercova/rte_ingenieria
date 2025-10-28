@@ -13,11 +13,11 @@ class ProductColorSeeder extends Seeder
      */
     public function run(): void
     {
-        ProductColor::create(['code' => 'ffff', 'description' => 'Blanco']);
-        ProductColor::create(['code' => '0000', 'description' => 'Negro']);
-        ProductColor::create(['code' => 'ff00', 'description' => 'Rojo']);
-        ProductColor::create(['code' => '00ff', 'description' => 'Azul']);
-        ProductColor::create(['code' => 'ffff', 'description' => 'Amarillo']);
-        ProductColor::create(['code' => '####', 'description' => 'Genérico']);
+        ProductColor::create(['code' => 'ffff', 'name' => 'Blanco']);
+        ProductColor::create(['code' => '0000', 'name' => 'Negro']);
+        ProductColor::create(['code' => 'ff00', 'name' => 'Rojo']);
+        ProductColor::create(['code' => '00ff', 'name' => 'Azul']);
+        ProductColor::create(['code' => 'ffff', 'name' => 'Amarillo']);
+        ProductColor::create(['code' => '####', 'name' => 'Genérico']);
     }
 }

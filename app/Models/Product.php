@@ -18,6 +18,7 @@ class Product extends Model
         'unit_measure_id',
         'code',
         'product_color_id',
+        'name',
         'description',
         'detail',
         'characteristics',

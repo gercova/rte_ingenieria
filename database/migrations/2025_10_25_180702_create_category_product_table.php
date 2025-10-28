@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('product_category', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('description', 50)->unique();
+            $table->string('name', 50)->unique();
+            $table->string('description');
+            $table->char('is_active', 1)->default('1');
             $table->timestamps();
             $table->softDeletes();
         });

@@ -11,6 +11,6 @@ class ProductCategory extends Model
     use HasFactory, SoftDeletes;
     protected $table        = 'product_category';
     protected $primaryKey   = 'id';
-    protected $fillable     = ['descripcion'];
+    protected $fillable     = ['name', 'description'];
     protected $dates        = ['created_at', 'updated_at', 'deleted_at'];
 }

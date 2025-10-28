@@ -13,13 +13,13 @@ class UnitMeasureSeeder extends Seeder
      */
     public function run(): void
     {
-        UnitMeasure::create(['description' => 'CAJA', 'aka' => 'CAJ']);
-        UnitMeasure::create(['description' => 'UNIDAD', 'aka' => 'UNI']);
-        UnitMeasure::create(['description' => 'KILOGRAMO', 'aka' => 'KG']);
-        UnitMeasure::create(['description' => 'TONELADA', 'aka' => 'TON']);
-        UnitMeasure::create(['description' => 'DOCENA', 'aka' => 'DOC']);
-        UnitMeasure::create(['description' => 'LITRO', 'aka' => 'LT']);
-        UnitMeasure::create(['description' => 'MILILITRO', 'aka' => 'ML']);
-        UnitMeasure::create(['description' => 'PIEZA', 'aka' => 'PZ']);
+        UnitMeasure::create(['name' => 'CAJA', 'description' => '--', 'aka' => 'CAJ']);
+        UnitMeasure::create(['name' => 'UNIDAD','description' => '--', 'aka' => 'UNI']);
+        UnitMeasure::create(['name' => 'KILOGRAMO', 'description' => '--', 'aka' => 'KG']);
+        UnitMeasure::create(['name' => 'TONELADA', 'description' => '--', 'aka' => 'TON']);
+        UnitMeasure::create(['name' => 'DOCENA', 'description' => '--', 'aka' => 'DOC']);
+        UnitMeasure::create(['name' => 'LITRO', 'description' => '--', 'aka' => 'LT']);
+        UnitMeasure::create(['name' => 'MILILITRO', 'description' => '--', 'aka' => 'ML']);
+        UnitMeasure::create(['name' => 'PIEZA', 'description' => '--', 'aka' => 'PZ']);
     }
 }

@@ -13,6 +13,7 @@ class ProductModelSeeder extends Seeder
      */
     public function run(): void
     {
-        ProductModel::create(['description' => 'Genérico']);
+        ProductModel::create(['name' => 'Genérico', 'description' => '--']);
+        ProductModel::create(['name' => 'Edición especial', 'description' => '--']);
     }
 }

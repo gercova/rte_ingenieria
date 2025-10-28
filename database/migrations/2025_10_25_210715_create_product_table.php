@@ -23,7 +23,8 @@ return new class extends Migration
             $table->string('code', 4);
             $table->unsignedInteger('product_color_id');
             $table->foreign('product_color_id')->references('id')->on('product_color');
-            $table->string('description')->unique();
+            $table->string('name', 100)->unique();
+            $table->string('description');
             $table->string('detail');
             $table->string('characteristics');
             $table->string('specifications');

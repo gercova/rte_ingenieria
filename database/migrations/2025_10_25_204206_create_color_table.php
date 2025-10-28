@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('product_color', function (Blueprint $table) {
             $table->increments('id');
             $table->string('code', 50);
-            $table->string('description', 50);
+            $table->string('name', 50);
             $table->timestamps();
             $table->softDeletes();
         });
