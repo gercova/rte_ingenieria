@@ -12,7 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('product', function (Blueprint $table) {
-            //
+            // Primero: agregar la nueva columna
+            $table->unsignedInteger('product_brand_id')->after('product_manufacturer_id');
+            $table->foreign('product_brand_id')->references('id')->on('product_brand');
+        });
+
+        Schema::table('product', function (Blueprint $table) {
+            // Segundo: modificar la posición de la columna existente
+            $table->unsignedInteger('product_category_id')->after('product_brand_id')->change();
         });
     }
 

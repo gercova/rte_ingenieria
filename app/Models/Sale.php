@@ -27,5 +27,5 @@ class Sale extends Model
         'tracking_number',
         'shipping_status',
     ];
-    protected $dates        = ['created_at', 'updated_at'];
+    protected $dates = ['created_at', 'updated_at'];
 }
